@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sun Aug 11 12:37:57 2019
+[*]
+[dumpfile] "G:\VIVADO_WORK_SPACE\Delta-sigma-ADC\wave.vcd"
+[dumpfile_mtime] "Sun Aug 11 12:36:21 2019"
+[dumpfile_size] 1350347
+[savefile] "G:\VIVADO_WORK_SPACE\Delta-sigma-ADC\wave.gtkw"
+[timestart] 45738900
+[size] 1920 1001
+[pos] -1 -1
+*-16.000000 46071800 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_delta_sigma_adc.
+[sst_width] 239
+[signals_width] 180
+[sst_expanded] 1
+[sst_vpaned_height] 287
+@28
+tb_delta_sigma_adc.u_delta_sigma_adc.clk
+@24
+tb_delta_sigma_adc.cnt[31:0]
+@28
+tb_delta_sigma_adc.u_delta_sigma_adc.rst_n
+@420
+tb_delta_sigma_adc.u_delta_sigma_adc.adc1b_out[15:0]
+[color] 2
+tb_delta_sigma_adc.u_delta_sigma_adc.inte0[31:0]
+[color] 2
+tb_delta_sigma_adc.u_delta_sigma_adc.diff0[31:0]
+[color] 2
+tb_delta_sigma_adc.u_delta_sigma_adc.rd0[31:0]
+[color] 6
+tb_delta_sigma_adc.u_delta_sigma_adc.inte1[31:0]
+[color] 6
+tb_delta_sigma_adc.u_delta_sigma_adc.diff1[31:0]
+[color] 6
+tb_delta_sigma_adc.u_delta_sigma_adc.rd1[31:0]
+@28
+tb_delta_sigma_adc.u_delta_sigma_adc.comp
+@8421
+tb_delta_sigma_adc.u_delta_sigma_adc.din[15:0]
+@28
+tb_delta_sigma_adc.u_delta_sigma_adc.dout
+[pattern_trace] 1
+[pattern_trace] 0

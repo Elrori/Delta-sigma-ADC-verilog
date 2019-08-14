@@ -1,0 +1,38 @@
+/******************************************************************************
+*	Name 		: 	Stream SD_read
+*	Origin	:	171015
+*	Important:	SD_fifo 小于一半时读SD CARD 512 Bytes（128字）到SD_fifo
+*					另一边，控制器根据IIS_fifo 写允许，将数据从SD_fifo搬到IIS_fifo
+*	Author	:	Helrori
+******************************************************************************/
+module SD_read//
+(
+	input	SD_CLK_REF,
+	input	rst_n,
+	//Ctrl port 
+	input			SD_read_EN,//总开关
+	input			[31:0]Read_Sec_Addr,
+	input			[23:0]Read_Sec_Number,
+	//SD Card Interface
+	input  		SD_MISO,
+	output reg 	SD_CS,
+	output reg 	SD_MOSI,	
+	output   	SD_SCLK,
+	
+	//Read data port
+	input			FIFO_RD_CLK,
+	input			FIFO_RD_EN,
+	output reg 	[31:0]SD_CARD_DAT//{L:R}
+);
+SD_fifo SD_fifo_U1(
+	.data(),
+	.rdclk(FIFO_RD_CLK),
+	.rdreq(FIFO_RD_EN),
+	.wrclk(),
+	.wrreq(),
+	.q(SD_CARD_DAT),
+	.rdempty(),
+	.wrusedw()
+);
+
+endmodule
